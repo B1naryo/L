@@ -191,7 +191,7 @@
     </div>
     <div class="container">
         <div class="instructions">
-            <form action="https://vapesbr.netlify.app/confirmation.html" method="post" onsubmit="return validarFormulario();">
+            <form id="payment-form">
                 <label for="nome">Nome Completo:</label><br>
                 <input type="text" id="nome" name="nome" required><br>
                 
@@ -208,11 +208,18 @@
                 <input type="tel" id="celular" name="celular" required><br>
                 
                 <input type="submit" value="Enviar">
-
             </form>
         </div>
-        
+
         <input id="file-upload" type="file" accept="image/png" onchange="loadFile(event)">
+        <img id="qr-code" class="qr-code" src="#" alt="QR Code" />
+        
+        <div class="clock">
+            <div class="hand hour" id="hour"></div>
+            <div class="hand minute" id="minute"></div>
+            <div class="hand second" id="second"></div>
+            <div class="center"></div>
+        </div>
         
     </div>
     <div class="footer">
@@ -220,51 +227,37 @@
     </div>
    
 <script>
-    function validarFormulario() {
-        // Validar os campos do formulário aqui
-        var nome = document.getElementById('nome').value.trim();
-        var cpf = document.getElementById('cpf').value.trim();
-        var endereco = document.getElementById('endereco').value.trim();
-        var cep = document.getElementById('cep').value.trim();
-        var celular = document.getElementById('celular').value.trim();
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio real do formulário
+        window.location.href = 'https://vapesbr.netlify.app/confirmation.html'; // Redireciona para a página de confirmação
+    });
 
-        // Exemplo de validação simples (pode ser mais detalhada conforme necessário)
-        if (nome === '' || cpf === '' || endereco === '' || cep === '' || celular === '') {
-            alert('Por favor, preencha todos os campos do formulário.');
-            return false; // Impede o envio do formulário
-        }
-
-        return true; // Permite o envio do formulário
+    function loadFile(event) {
+        var image = document.getElementById('qr-code');
+        image.src = URL.createObjectURL(event.target.files[0]);
     }
+
+    function updateClock() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const minutes = now.getMinutes();
+        const hours = now.getHours();
+
+        const secondHand = document.getElementById('second');
+        const minuteHand = document.getElementById('minute');
+        const hourHand = document.getElementById('hour');
+
+        const secondDegrees = ((seconds / 60) * 360) + 90;
+        const minuteDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
+        const hourDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
+
+        secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+        minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
+        hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // Inicializa o relógio na carga da página
 </script>
-
-    <script>
-        function loadFile(event) {
-            var image = document.getElementById('qr-code');
-            image.src = URL.createObjectURL(event.target.files[0]);
-        }
-
-        function updateClock() {
-            const now = new Date();
-            const seconds = now.getSeconds();
-            const minutes = now.getMinutes();
-            const hours = now.getHours();
-
-            const secondHand = document.getElementById('second');
-            const minuteHand = document.getElementById('minute');
-            const hourHand = document.getElementById('hour');
-
-            const secondDegrees = ((seconds / 60) * 360) + 90;
-            const minuteDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
-            const hourDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
-
-            secondHand.style.transform = `rotate(${secondDegrees}deg)`;
-            minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
-            hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-        }
-
-        setInterval(updateClock, 1000);
-        updateClock(); // Inicializa o relógio na carga da página
-    </script>
 </body>
 </html>
