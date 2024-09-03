@@ -1,105 +1,107 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    color: #ffffff; /* Cor do texto branco */
+    background-color: #000000; /* Cor do fundo preto */
 }
 
 /*------------------------------- tarjeta de inicio -------------------------------------------*/
-  
-  #grid__index {
+
+#grid__index {
     display: grid;
-      grid-template-areas: 
-      "headerNav"
-      "main"
-      "foteer"
-      ;
-      grid-template-columns: 100%;
-      grid-template-rows: auto 1fr auto;
-      height: 100vh;
-  
-  }
-  /*---------------------Logo del Nav------------------------*/
-  .logo{
+    grid-template-areas: 
+        "headerNav"
+        "main"
+        "foteer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/*---------------------Logo del Nav------------------------*/
+
+.logo {
     height: 80%;
     display: flex;
-  }
-  .logo img{
-    margin-left: 2rem;
-  }
+}
 
-  /* ------------------- NAV DEL INDEX :) ------------------- */
-    
-  .nav__container {
+.logo img {
+    margin-left: 2rem;
+}
+
+/* ------------------- NAV DEL INDEX :) ------------------- */
+
+.nav__container {
     background-color: #000000;
     display: flex;
     width: 100%;
     height: 4rem;
     justify-content: space-between;
     align-items: center; 
-  }
-  
-  .nav__h1 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-    color: rgb(255, 255, 255);
-  }
-  
-  .nav__ul {
+}
+
+.nav__h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
+}
+
+.nav__ul {
     display: flex;
     margin-right: 1rem;
     box-shadow: 0 0px 0px rgba(0,0,0,0.2);
-  }
-  
-  .nav__li {
+}
+
+.nav__li {
     display: flex;
-   list-style: none;
-   padding: 1rem;
-   transition: 0.5s;
-  }
-  
-  .nav__li a {
+    list-style: none;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.nav__li a {
     text-decoration: none;
-    font-size: 1rem ;
-    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    color: #ffffff;
     margin: 0rem 0.625rem;
     border-radius: 6px;
     padding: 0.5rem 0.5rem;
-    
-  }
+}
 
-  .nav__li a:hover {
-    background-color: #ffffff;
+.nav__li a:hover {
+    background-color: black;
     transition: 0.5s;
-    color: #000;
-  }
+    color: #ffffff;
+}
 
-  .sinCargoHeader__{
+.sinCargoHeader__ {
     text-align: center;
-    background-color: rgb(237, 152, 56, 0.563);
+    background-color: rgba(237, 152, 56, 0.563);
     height: 3.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
 
-  }
-
-  .sinCargoHeader__ h3{
+.sinCargoHeader__ h3 {
     font-weight: 500;
     font-size: 1rem;
-  }
+}
 
-  /*---------------------Menu Responsive-------------------*/
-  .menuResponsive {
+/*---------------------Menu Responsive-------------------*/
+
+.menuResponsive {
     display: none;
-  }
-  
-  /* ------------------- HERO DEL INDEX :) ------------------- */
-  
-  .hero__container {
-    margin:  auto;
+}
+
+/* ------------------- HERO DEL INDEX :) ------------------- */
+
+.hero__container {
+    margin: auto;
     padding: auto;
     width: 100%;
     min-height: 100vh;
@@ -109,53 +111,53 @@
     background-image: url(./img/hero__Fondo.jpg);
     background-position: center;
     background: cover;
-    background-size: 100% ;
-    background-repeat: no-repeat ;
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 3;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 0 100%, 0% 50%);
-  }
+}
 
-  .hero__container::before {
+.hero__container::before {
     content: "";
     width: 100%;
     min-height: 100vh;
     position: absolute;
-    top:2;
+    top: 2;
     left: 0;
-    background: rgb(237,188,56);
+    background: rgb(237, 188, 56);
     background: linear-gradient(177deg, rgb(237, 152, 56, 1) 0%, rgba(88,230,88,0) 69%);
     opacity: 0.4;
     z-index: 1;
-  }
+}
 
-  .hero__h3 {
+.hero__h3 {
     display: flex;
     font-size: 5rem;
-    color: #000;
+    color: #ffffff;
     text-align: center;
     margin: 3rem 5rem 2rem;
-    font-weight: 300; 
+    font-weight: 300;
     z-index: 2; 
-  }
+}
 
-  .hero__p1 {
+.hero__p1 {
     font-size: 1rem;
     font-weight: 300;
     font-stretch: expanded;
     z-index: 2;
-  }
+}
 
-  .hero__container a{
+.hero__container a {
     position: relative;
-  }
+}
 
-  .seccion_{
-   width: 100%;
-   height: 1999px;
-  }
+.seccion_ {
+    width: 100%;
+    height: 1999px;
+}
 
-  .boton1 {
-    background-color:rgba(0, 0, 0, 0) ;
+.boton1 {
+    background-color: rgba(0, 0, 0, 0);
     margin-top: 80px;
     z-index: 10;
     text-decoration: none;
@@ -163,33 +165,33 @@
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     border: rgb(237, 152, 56) 2px solid;
     border-radius: 20px;
-  }
+}
 
-  .boton1 a{
+.boton1 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     padding: 1rem 2rem;
     font-weight: 300;
-  }
-  .boton1 h3{
+}
+
+.boton1 h3 {
     color: #ffffff;
-  }
+}
 
-  .boton1:hover{
-    background-color:rgb(237, 152, 56); ;
+.boton1:hover {
+    background-color: rgb(237, 152, 56);
     transition: 300ms;
-
-  }
+}
 
 /*--------------------------Section perro y gato :) -----------------------*/
 
-.seccion_{
-  width: 100%;
-  height: auto ;
-  margin-bottom: 5rem;
+.seccion_ {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
 }
 
-.Productos__h3{
+.Productos__h3 {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -200,1055 +202,184 @@
     font-weight: 300;
 }
 
-.Productos__p1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-  margin-bottom: 25px;
-  }
-
-.perro{
-  background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
-  background-size: 100% 100%;
-  width: 50%;
-  height: 650px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-right: 4rem;
-  margin-left: 10%;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-}
-.gato{
-  background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
-  background-size: 100% 100%;
-  width: 50%;
-  height: 650px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-right: 10%;
-  margin-left: 0px;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-  transition: all 500ms ease-out;
+.Productos__p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
-.contenedorAnimales{
-  display: flex;
+.perro {
+    background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
+    background-size: 100% 100%;
+    width: 50%;
+    height: 650px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 4rem;
+    margin-left: 10%;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
 
+.gato {
+    background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
+    background-size: 100% 100%;
+    width: 50%;
+    height: 650px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10%;
+    margin-left: 0px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    transition: all 500ms ease-out;
+}
+
+.contenedorAnimales {
+    display: flex;
 }
 
 /*------------------------Div Perro ----------------------*/
 
-.capaP{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  top: 0;
-  border-radius: 6px;
-  background: rgb(237, 152, 56);
-  background: linear-gradient(177deg, rgb(237, 152, 56, 0.563) 0%, rgba(88,230,88,0) 69%);
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-
-
+.capaP {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    border-radius: 6px;
+    background: rgb(237, 152, 56);
+    background: linear-gradient(177deg, rgb(237, 152, 56, 0.563) 0%, rgba(88,230,88,0) 69%);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
 
-.capaP h3{
-  position: relative;
-  height: 250px;
-  width: 350px;
-  opacity: 1;
-  overflow: hidden;
-  text-align: center;
-
+.capaP h3 {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
 }
 
-.perro:hover > .capaP{
-  opacity: 1;
-  visibility: visible;
+.perro:hover > .capaP {
+    opacity: 1;
+    visibility: visible;
 }
 
-.perro:hover > .capaP h3{
-  margin-top: 50%;
-  margin-bottom: 15px;
-  transition: all 500ms ease-out;
+.perro:hover > .capaP h3 {
+    margin-top: 50%;
+    margin-bottom: 15px;
+    transition: all 500ms ease-out;
 }
 
-.perro .capaP h3{
-  color: rgb(0, 0, 0);
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 0;
-  transition: all 1s ease-out;
-  margin-top: 30px;
+.perro .capaP h3 {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    transition: all 1s ease-out;
+    margin-top: 30px;
 }
 
 .a__perro { 
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /*------------------------Div Gato-----------------*/
 
-.capaP2{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  top: 0;
-  border-radius: 6px;
-  background: rgb(237, 152, 56);
-  background: linear-gradient(177deg, rgb(237, 152, 56, 0.563) 0%, rgba(88,230,88,0) 69%);
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-}
-
-.capaP2 h3{
-  position: relative;
-  height: 250px;
-  width: 350px;
-  overflow: hidden;
-}
-
-.gato:hover > .capaP2{
-  opacity: 1;
-  visibility: visible;
-}
-
-.gato:hover > .capaP2 h3{
-  margin-top: 50%;
-  margin-bottom: 15px;
-}
-
-.gato .capaP2 h3{
-  color: rgb(0, 0, 0);
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 0;
-  transition: all 500ms ease-out;
-  margin-top: 30px;
-}
-
-/* --------------------Envios Pantalla Dividida-------*/
-
-.izquierda{
-  background: rgb(237, 152, 56);
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.izquierda h3{
-  font-size: 80px;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 40px;
-  margin-top: 3vh;
-}
-.izquierda p {
-  font-size: 16px;
-  line-height: 30px;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-.Sistema{
-  color: #ffff;
-}
-.derecha{
-  background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
-  background-size: cover;
-  background-position: center ;
-  width: 50%;
-  height: auto;
-}
-.seccionEnvios{
-  display: flex;
-}
-.izquierda a{
-  border:  2px solid #ffff;
-  padding: 2%;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  text-align: center;
-  display: inline-block;
-  margin-top: 10rem;
-}
-
-.mapa__boton {
-  display: flex;
-}
-
-/* --------------------Preguntas Frecuentees-------*/
-
-.pr__section{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 5rem;
-}
-.pr__h3{
-  font-size: 50px;
-  margin: 2rem;
-  text-align: center;
-}
-.pr__container{
-  width: 80%;
-  margin: 1rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-  border: rgb(237, 152, 56)
-  3px solid;
-  
-}
-.pr__container span {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-.pr__container p{
-  font-stretch: expanded;
-}
-
-/*------------------------ contacto --------------------------*/
-.content{
-  margin-top: 10rem;
-}
-
-.container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-}
-
-.ul__contacto {
-  list-style: none;
-  padding: 0;
-}
-
-.logo__contacto {
-  text-align: center;
-  font-size: 3em;
-}
-
-.logo__contacto span {
-  color: rgb(237, 152, 56);
-}
-
-.contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
-
-.contact-wrapper > * {
-  padding: 1em;
-}
-
-.contact-form {
-  background: #ffffff;
-}
-
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form label {
-  display: block;
-}
-
-.contact-form form p {
-  margin: 0;
-  padding: 1em;
-}
-
-.contact-form form .block {
-  grid-column: 1 / 3;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
-  padding: .7em;
-  border: none;
-  background: none;
-  outline: 0;
-  color: #fff;
-  border-bottom: 1px solid rgb(237, 152, 56);;
-}
-
-.contact-form form button {
-  background: rgb(237, 152, 56);;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-  background: rgb(242, 161, 69);
-  color: #fff;
-  transition: background-color 1s ease-out;
-  outline: 0;
-}
-
-/* CONTACT INFO */
-.contact-info {
-  background: rgb(255, 255, 255);
-}
-
-.contact-info h4, .contact-info ul, .contact-info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-/* LARGE SIZE */
-@media(min-width: 700px) {
-  
-  .contact-wrapper {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-  }
-  .contact-wrapper > * {
-      padding: 2em;
-  }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-      text-align: left;
-  }
-}
-
-
-
-
-
-/* --------------------griiidddd perros-------*/
-.buton__container-perros {
-  display:flex;
-  justify-content: space-evenly;
-  margin: 1rem auto 5rem ;
-}
-.buton__container-perros a{
-  text-decoration: none;
-  color: #000;
-}
-.boton__opciones {
-  border-radius: 3rem;
-  background-color: rgba(0, 140, 255, 0);
-  padding: 0.5rem 1rem;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  cursor: pointer;
-}
-
-.grid_item-perro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
--moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  object-fit: contain;
-  border-radius: 1rem
-;
-}
-.productos__h3 {
- text-align: center;
- font-size: 2rem;
- font-weight: 500;
-}
-.grid_item-perro h3 {
-  font-weight: 400;
-  margin:5px;
-  text-align: center;
-}
-.grid_item-perro p {
-  font-weight: bold;
-}
-.boton__comprar {
-  margin: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.boton__comprar a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 400;
-}
-
-.imagenes__grid{
-  margin: 1rem;
-  width: 240px;
-  height: 240px;
-  object-fit: contain;
-  
-}
-
-
-.div__container-perro {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
-  grid-auto-rows: minmax(240px, auto);
-  gap: 20px;
-  margin:2rem;
-}
-
-/*-----------------------------------gridgatos_________----------------______*/
-.grid_item-gatos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  object-fit: contain;
-  border-radius: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.grid_item-gatos h3 {
-  font-weight: 400;
-  margin:5px;
-  text-align: center;
-}
-.grid_item-gatos p {
-  font-weight: bold;
-}
-
-/*---------------------------BOTONES PRODUCTOS GATO/PERRO------------*/
-.boton__comprar {
-  background-color: rgb(245, 176, 65);
-  width: auto;
-  height: auto;
-  padding: 5px 12px ;
-  border-radius:2rem;
-  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  justify-content: center;
-  align-items: center;
-}
-.boton__comprar a {
-  text-decoration: none;
-  color: #000;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-}
-
-.boton__comprar:hover{
-  background: rgb(39, 55, 70);
-  transition: 500ms;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.boton__comprar a:hover {
-  color: #ffffff;
-  transition: 500ms;
-
-}
-
-.imagenes__grid{
-  width: 240px;
-  height: 240px;
-  object-fit: contain;
-  
-}
-
-.div__container-gatos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
-  grid-auto-rows: minmax(240px, auto);
-  gap: 20px;
-  margin:2rem;
-}
-  /*-------------------------Scroll Automático--------------------*/
-html {
-  scroll-behavior: smooth;
-}
-/*------------------------Footer Index--------------------------*/
-
-
-
-
-/*------------------------Footer Index--------------------------*/
-footer {
-  width: 100%;
-  padding: 50px 0;
-
-
-}
-
-.container__footer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items:flex-start;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 100px;
-  
-}
-.box__footer {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
-  
-}
-.box__footer h4 {
-  font-size: 1.7rem;
-  font-weight: bolder;
-}
-.box__footer h3{
-  font-weight:600;
-  margin-bottom: 30px;
-}
-.box__footer .terms {
-  max-width: 350px;
-  margin-top: 2rem;
-  font-weight: 500;
-  color: #7a7a7a;
-}
-.box__footer p {
-  margin-top: 10px;
-  color: #7a7a7a;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-}
-.box__footer a {
-  margin-top: 10px;
-  color: #7a7a7a;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-  
-}
-.box__footer a:hover {
-  opacity: 0.8;
-}
-.box__footer a .fa-brands {
- font-size: 20px;
- color: #7a7a7a ;
- margin-right: 5px;
-}
-
-.derechos {
-  color: #7a7a7a ;
-
-}
-
-
-/*------------------------------------------Productos Gatos------------------------------*/
-
-.hero__container_gato {
-  margin:  auto;
-    padding: auto;
+.capaP2 {
     width: 100%;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(https://brliquids.com/wp-content/uploads/2021/02/Vape-saiba-tudo-sobre-essa-tendencias-entre-os-jovens-JuicesBr.jpg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat ;
-    z-index: 3;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 0 100%, 0% 50%);
-    font-family: sy;
-  }
-
-  .hero__container_perro{
-    margin:  auto;
-    padding: auto;
-    width: 100%;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-position: center;
-    background-position: center;
-    background-size: 100% ;
-    background-repeat: no-repeat ;
-    z-index: 3;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 0 100%, 0% 50%);
-    font-family: sy;
-  }
-
-  .hader_gatos{
-    width: 75%;
-    margin-left: 16% ;
-  }
-  
-  .header_productos_h3{
-    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
-    font-size: 30px ;   
+    height: 100%;
+    top: 0;
+    border-radius: 6px;
+    background: rgb(237, 152, 56);
+    background: linear-gradient(177deg, rgb(237, 152, 56, 0.563) 0%, rgba(88,230,88,0) 69%);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
     text-align: center;
-    padding-bottom: 100px;
-    border-bottom: 1px solid rgba(4,4,4,0.1);
-  }
-  .header__productos_p{
-    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-    padding-top: 30px;
-  }
+}
 
-  .header__productos_p a{
-    text-decoration: none;
-    color: #000;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  
-  .TitulosGatos__h3{
-    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 65px;
+.capaP2 h3 {
     position: relative;
-    display: flex;
-    margin-bottom: 0px;
-    background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 25px ;
-    border-radius: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0.5px;
-    padding-bottom: 0.5px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-  }
-  
-  .columna_productos{
-    width: 75%;
-    margin-left: 0px;
-  }
-  
-  .main__productos {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  margin: 0 auto; /* Centraliza o contêiner principal */
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
 }
 
-  .buton__container-gatos h3{
-    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-bottom: 35px;
-    text-align: center;
-    font-weight: 100;
-    font-size: 25px;
-    padding-top: 0.5px;
-  }
-  .buton__container-gatos{
-    margin-top: 66px;
-    margin-left: 60px;
-    margin-right: 70px;
-    
-  }
-  
-  .buton__container-gatos a{
-    text-decoration: none;
-    color:#000;
-  }
-  .boton__opciones_gato {
-    border-radius: 3rem;
-    background-color: rgba(0, 140, 255, 0);
-    padding: 0.5rem 1rem;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    cursor: pointer;
-    margin-bottom: 8px;
-  }
-  
-  
-  /*----------------------------------------HERO DE PRODUCTOS GATOS------------------------*/
-  /*----------------------RESPONSIVE PARA tablets--------------------*/
-  @media (max-width:780px){
-  
-    .seccion {
-      width: 100%;
-      height: auto ;
-    }
-    .contenedorAnimales {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0;
-    }
-    .Productos__h3{
-        margin: 3rem 2rem 0;        
-      
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        font-size: x-large;
-        font-weight: 300;
-    }
-    
-    .Productos__p1{
-      text-align: center;
-      padding: 0%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin :0 2rem 1rem; 
-      }
-    
-    .perro{
-
-      background-size: 100% 100%;
-      width: 80%;
-      height: 30rem;
-      border-radius: 6px;
-      cursor: pointer;
-      margin: 0rem 2rem 1rem 2rem;
-    }
-    .gato{
-        background-image: url(./img/GatoInicio.jpg);
-        background-size: 100% 100%;
-        width: 80%;
-        height: 30rem;
-        border-radius: 6px;
-        cursor: pointer;
-        margin: 1rem 2rem 2rem 2rem;
-
-        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-        transition: all 500ms ease-out;
-    }
-
-    .capaP{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 185px;
-      top: 0;
-      border-radius: 6px;
-      background: rgb(237, 152, 56);
-      background: linear-gradient(177deg, rgb(237, 152, 56, 0.563) 0%, rgba(88,230,88,0) 69%);
-      transition: all 500ms ease-out;
-      opacity: 0;
-      visibility: hidden;
-      text-align: center;
-    }
-  /*envios*/
-  .seccionEnvios {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .izquierda{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;  
-    align-content: center;
-  }
-  
-  .izquierda h1{
-    font-size: 70px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 0;
-    margin-top: 3vh;
-    margin-left: 3rem;
-  }
-  .izquierda p {
-    font-size: 16px;
-    line-height: 30px;
-    
-    margin: 2rem 3rem ;
-  }
-  .Sistema{
-    color: #ffff;
-  }
-  .derecha{
-    background-image: url(./img/GatitoLengua.jpg);
-    background-size: cover;
-    background-position: center ;
-    width: 100%;
-    height: 80vh;
-  }
-
-  .izquierda a{
-    border:  2px solid #ffff;
-    padding: 2%;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    text-align: center;
-    display: inline-block;
-    margin-top: 10rem;
-  }
-  
-
-
-
-
-
-  }
-/*-----------------------Responsive Botones-------------*/
-@media (max-width:790px){
-  .buton__container-gatos{
-    margin-left: 20px;
-    margin-right: 20px;
-    
-  }
-}
-@media (max-width:650px){
-  .buton__container-gatos{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .buton__container-gatos h3{
-    font-weight: 150;
-    font-size: 22.5px;
-  }
-
-  .boton__opciones_gato {
-    border-radius: 3rem;
-    background-color: rgba(0, 140, 255, 0);
-    padding: 0.3rem 0.5rem;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-    cursor: pointer;
-    margin-bottom: 8px;
-    font-size: 15px;
-  }                   
-  }
-
-  @media (max-width:570px){
-    .buton__container-gatos{
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .boton__opciones_gato {
-      border-radius: 3rem;
-      background-color: rgba(0, 140, 255, 0);
-      padding: 0.3rem 0.2rem;
-      -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-      -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-      box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.29);
-      cursor: pointer;
-      margin-bottom: 8px;
-      font-size: 15px;
-      width: 100px;
-      text-align: center;
-    }  
-
-    .TitulosGatos__h3{
-      font-size: 22.5px;
-    }
-
-  }
-  @media (max-width:440px){
-    .buton__container-gatos{
-      display: none;
-    }
-    
-    .columna_productos{
-      width: 100%;
-    }
-
-  }
-
-
-
-  /*----------------------RESPONSIVE PARA CELULARES--------------------*/
-  @media (max-width:480px){
-    /*--------------------NAV RESPONSIVE CELULARES---------------------*/
-    .menuResponsive{
-    display: flex;
-    justify-content: flex-end;
+.gato:hover > .capaP2 {
+    opacity: 1;
     visibility: visible;
-    }
-    
-  
-    .logo{
-      width: 70%;
-      height: 70%;
-    }
-    
-    .logo img{
-      height: 100;
-      width: 15%;
-      margin-left: 1rem;
-    }
-  
-  
-    .nav__container {
-      height: 3.5rem;
-    }
-    
-    .nav__h1 {
-    font-size: 1rem;
-    }
-    
-    .nav__ul {
-      display: none;
-      margin-right: 1rem;
-      box-shadow: 0 0px 0px rgba(0,0,0,0.2);
-    }
-    
-    .nav__li {
-      display: flex;
-     list-style: none;
-     padding: 1rem;
-     transition: 0.5s;
-    }
-    
-    .nav__li a {
-      text-decoration: none;
-      font-size: 1rem ;
-      color: rgb(255, 255, 255);
-      margin: 0rem 0.625rem;
-      border-radius: 6px;
-      padding: 0.5rem 0.5rem;
-      
-    }
-    .nav__li a:hover {
-      background-color: #ffffff;
-      transition: 0.5s;
-      color: #000;
-    }
-  
-    .fa-solid {
-      color: #ffff;
-      margin-right: 2vh;
-      font-size: 30px;   
-     }
-  
-    .sinCargoHeader__{
-      height: 1rem;
-      display: flex;
+}
 
-  
-    }
-    .sinCargoHeader__ h3{
-      font-weight: 500;
-      font-size: 8px;
-    }
-    /*---------------------HERO RESPONSIVE CELULARES--------------------*/
-  
-    .hero__container {
-      margin:  auto;
-      padding: auto;
-      width: 100%;
-      height: 100vh;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-image: url(./img/fondo__responsive.jpg);
-      background: cover;
-      background-size: 100% ;
-      background-repeat: no-repeat ;
-      z-index: 3;
-      clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 0 100%, 0% 50%);
-    }
-  
-    .hero__container::before {
-      content: "";
-      width: 100%;
-      min-height: 100vh;
-      position: absolute;
-      top:2;
-      left: 0;
-      background: rgb(237,188,56);
-      background: linear-gradient(177deg, rgb(237, 152, 56, 1) 0%, rgba(88,230,88,0) 69%);
-      opacity: 0.4;
-      z-index: 1;
-    }
-  
-    .hero__h3 {
-      display: flex;
-      font-size:3.5em;
-      color: #000;
-      text-align: center;
-      margin:1rem 1rem 8rem;
-      font-weight: 400; 
-      z-index: 2; 
-    }
-  
-    .hero__p1 {
-      font-size: 1rem;
-      font-weight: 300;
-      text-align: center;
-      margin: 2rem 2rem 0rem; 
-    }
-  
-    .hero__container a{
-      position: relative;
-      }
-  
-  
-    .boton1 {
-      background-color:rgba(15, 14, 10, 0) ;
-      margin-top: 8rem;
-      text-decoration: none;
-      padding:10px 10px;
-      box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-      border: #000000 2px solid;
-      border-radius: 2.5rem;
-    }
-    .boton1 a{
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      padding: 0;
-      font-weight: 300;
-    }
-    .boton1 h3{
-      color: #ffffff;
-  
-    }
-/*envios*/
-    .izquierda h3{
-      font-size: 70px;
-      width: 60%;
-      margin: 2rem 3rem;
-  
-    }
-    .izquierda p {
-      margin-left: 1rem;
-    }
-  
-    /*------------------------SECCION PERRO Y GATO RESPONSIVE----------------------*/
-  
+.gato:hover > .capaP2 h3 {
+    margin-top: 50%;
+    margin-bottom: 15px;
+}
 
+.gato .capaP2 h3 {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
 
-   
-  }
+/* ----------------------- FOOTER :) ------------------------*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 100%;
+    height: 17rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer img {
+    height: 30%;
+    width: 100%;
+}
+
+.footerH {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.footerP {
+    display: flex;
+    justify-content: center;
+}
+
+.pagos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+}
+
+.footerH h3 {
+    color: #ffffff;
+}
+
+.footerP p {
+    color: #ffffff;
+    font-weight: 300;
+}
+
